@@ -3812,3 +3812,61 @@ body {
   background-size: 50%;
   background-repeat: no-repeat;
 }
+
+.cicle{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cicle .card{
+  max-width: 30%;
+}
+
+.cicle .card:nth-child(8){
+  max-width: 63% !important;
+  height: 80vh !important;
+}
+
+@media (max-width: 767px) {
+  .cicle{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .cicle .card{
+    max-width: 95%;
+  }
+  
+  .cicle .card:nth-child(8){
+    max-width: 95% !important;
+    height: auto!important;
+  }
+}
+
+/*Configurações da API de slides*/
+.swiper-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.swiper-slide {
+  width: 100% !important;
+  height: auto;
+  min-height: 50vh;
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
