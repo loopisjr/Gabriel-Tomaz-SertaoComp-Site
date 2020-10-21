@@ -3826,10 +3826,6 @@ body {
   max-width: 30%;
 }
 
-.cicle .card:nth-child(8){
-  max-width: 63% !important;
-  height: 80vh !important;
-}
 
 @media (max-width: 767px) {
   .cicle{
@@ -3852,21 +3848,13 @@ body {
   }
 }
 
-/*Configurações da API de slides*/
-.swiper-container {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.hover-link:hover{
+  text-decoration: underline;
 }
-.swiper-slide {
-  width: 100% !important;
-  height: auto;
-  min-height: 50vh;
-  text-align: center;
-  font-size: 18px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.hover-link a:hover{
+  color: #c5a47e !important;
+}
+
+.hover-link a span{
+  font-size: 10px;
 }
